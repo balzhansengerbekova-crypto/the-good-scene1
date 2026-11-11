@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#10111e" />
+  <meta name="description" content="The Good Scene: an interactive Grade 9 English film studio lesson about charities." />
+  <title>THE GOOD SCENE · A Charity Film Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="app" class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">✦</span>
+        <div><div class="eyebrow">ENGLISH WEEK <span class="dot"></span> CINEMA EDITION</div><div class="brand-name">THE GOOD SCENE<span class="brand-period">.</span></div></div>
+      </div>
+      <div class="topbar-right">
+        <div class="live-pill"><span class="live-dot"></span> LIVE CLASSROOM <span class="pill-separator">/</span> GRADE 9</div>
+        <button id="teacherMode" class="ghost-btn" aria-pressed="false">◉ Teacher notes</button>
+        <button id="resetSession" class="ghost-btn quiet" title="Clear all progress, studio names and points">↺ Reset</button>
+      </div>
+    </header>
+
+    <div class="studio-layout">
+      <aside class="sidepanel">
+        <div class="side-head"><span>THE FILM REEL</span><span id="reelProgress">01 / 11</span></div>
+        <div class="reel-track" id="sceneNav" aria-label="Lesson scenes"></div>
+        <div class="side-footer">
+          <span class="small-label">THE STORY IN ONE LINE</span>
+          <p>Not every hero wears a cape. Some just take one small action.</p>
+          <a href="student_worksheet.html" target="_blank" rel="noopener" class="side-link">↗ Print student sheets</a>
+        </div>
+      </aside>
+
+      <main class="mainpanel">
+        <section class="scene-header">
+          <div class="scene-header-top"><span id="sceneKicker" class="scene-kicker">ACT 01 · OPENING FRAME</span><span id="stageSpan" class="time-tag">00:00—04:00</span></div>
+          <h1 id="sceneTitle">The Story Starts Here</h1>
+          <p id="sceneSubtitle" class="scene-subtitle"></p>
+          <div class="scene-tools">
+            <div class="clock-wrap"><span class="clock-label">SCENE TIMER</span><span id="clock" class="clock">04:00</span><button id="clockToggle" class="mini-btn primary">▶ Start</button><button id="clockReset" class="mini-btn" title="Reset the timer">↺</button></div>
+            <span class="scene-prompt">ONE PROJECTOR · FOUR STUDIOS · ONE BIG IDEA</span>
+          </div>
+        </section>
+
+        <section id="sceneContent" class="scene-content" aria-live="polite"></section>
+
+        <section id="teacherPanel" class="teacher-panel" hidden></section>
+
+        <div class="navigation-bar">
+          <button id="prevStage" class="nav-btn secondary">← Previous scene</button>
+          <div class="progress-rail" aria-label="Progress through eleven scenes"><div id="progressFill"></div></div>
+          <button id="nextStage" class="nav-btn primary">Next scene →</button>
+        </div>
+      </main>
+
+      <aside class="rightpanel">
+        <div class="right-title"><span>THE FOUR STUDIOS</span><span class="tiny-star">★</span></div>
+        <p class="right-desc">Festival stars celebrate teamwork. Each learner's /10 assessment stays individual.</p>
+        <div id="studioCards" class="studio-list"></div>
+        <button id="studioNamesToggle" class="rename-btn">✎ Rename studios</button>
+        <div id="studioNamesForm" class="rename-form" hidden></div>
+        <div class="award-note"><div class="award-kicker">DIRECTOR'S REMINDER</div><strong>Evidence before applause.</strong><p>Let students read, justify, create and improve. Stars are optional — not grades.</p></div>
+        <a href="teacher_guide.html" target="_blank" rel="noopener" class="teacher-link">OPEN TEACHER'S PLAYBOOK <span>↗</span></a>
+      </aside>
+    </div>
+    <footer class="footer"><span>BEYOND THE PICTURE · CHARITIES & CONFLICT · EXCEL FOR KAZAKHSTAN, GRADE 9</span><span>DESIGNED FOR A 45-MINUTE CLASS</span></footer>
+  </div>
+  <script src="app.js" defer></script>
+</body>
+</html>

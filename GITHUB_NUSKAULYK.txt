@@ -1,0 +1,18 @@
+THE GOOD SCENE — GitHub Pages-ке жариялау
+
+1. github.com сайтына кіріңіз немесе Google арқылы тіркеліңіз.
+2. https://github.com/new бетіне өтіңіз.
+3. Repository name: the-good-scene
+4. Public таңдаңыз; Create repository басыңыз.
+5. Жаңа репозиторийде Add file -> Upload files басыңыз.
+6. Осы архивтен шығарылған 6 файлды (index.html, styles.css, app.js, teacher_guide.html, student_worksheet.html, .nojekyll) жүктеңіз.
+   Ескерту: .nojekyll жасырын файл ретінде көрінуі мүмкін. Оны жүктемесеңіз де сайт жұмыс істеуі мүмкін.
+   ZIP файлын тұтас жүктемеңіз. Оның ішіндегі файлдарды таңдаңыз.
+7. Commit changes басыңыз.
+8. Settings -> Pages -> Build and deployment -> Source: Deploy from a branch
+9. Branch: main, Folder: /(root) таңдап, Save басыңыз.
+10. Сайт сілтемесі: https://GITHUB-USERNAME.github.io/the-good-scene/
+   GITHUB-USERNAME орнына өз GitHub пайдаланушы атыңызды қойыңыз.
+
+Бұл статикалық сайт; ұпайлар бір браузердегі localStorage-да сақталады. Әр мұғалімнің браузеріндегі есеп бөлек болады.
+Құпия/оқушының жеке деректерін сайтқа жарияламаңыз.
